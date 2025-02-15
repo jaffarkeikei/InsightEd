@@ -5,7 +5,7 @@
 ## Introduction
 
 Large class sizes, particularly in rural or underprivileged regions (e.g., parts of Africa), pose a critical challenge:
-- **One teacher** may be responsible for **several of students**.
+- **One teacher** may be responsible for **several students**.
 - **Exam feedback** can take time, delaying valuable insights.
 - **Personalized recommendations** for each student are rarely provided.
 - **Parents** often only see final marks, with no clear direction for improvement.
@@ -39,7 +39,7 @@ This project aims to **bridge the feedback gap** by leveraging **AI-driven analy
 InsightEd: A lightweight, AI-driven platform that automates and generates hyper-personalized feedback for students/parents and empowers teachers with actionable analytics.
 
 **Elevator Pitch**:  
-> We offer a simple platform where teachers can enter or upload exam scores, and within seconds, generate personalized feedback reports for each student. This feedback leverages AI-driven insights, empowering students, parents, and teachers to understand progress, spot trends, learning gaps, and act on improvement opportunities. This gives meaning to numbers, while making AI accessible and useful to the world. This would be possible to do in a reasonable amount of time without AI, especially institutions where there are hundreds of stundents in a class. InsightEd ensures no child is left behind due to overwhelmed teachers.” This isn’t just an app—it’s a movement to democratize personalized education. With AI as a force multiplier, InsightEd turns every teacher into a super-teacher and every student into a future leader.
+> We offer a simple platform where teachers can enter or upload exam scores, and within seconds, generate personalized feedback reports for each student. This feedback leverages AI-driven insights, empowering students, parents, and teachers to understand progress, spot trends, learning gaps, and act on improvement opportunities. This gives meaning to numbers, while making AI accessible and useful to the world. This would be impossible to do in a reasonable amount of time without AI, especially institutions where there are hundreds of stundents in a class. InsightEd ensures no child is left behind due to overwhelmed teachers.” This isn’t just an app—it’s a movement to democratize personalized education. With AI as a force multiplier, InsightEd turns every teacher into a super-teacher and every student into a future leader.
 
 ### Core Features
 
@@ -71,7 +71,7 @@ InsightEd: A lightweight, AI-driven platform that automates and generates hyper-
 
 ### 2. Database / Storage
 - Relational Database (e.g., PostgreSQL) for storing:
-  - **Students**: ID, Name, Class
+  - **Students**: ID, Name,Date of Birht, Class, Parent Information
   - **Exams**: ID, Subject, Date
   - **Scores**: StudentID, ExamID, Score
 
@@ -83,7 +83,9 @@ InsightEd: A lightweight, AI-driven platform that automates and generates hyper-
   - Rule-based text generation or LLM prompts.
 - **Reporting**:
   - Summaries for teacher dashboards.
-  - Individual PDF/printed feedback for students.
+  - Individual Detailed PDF/printed feedback for students (with preview for Parent and teacher).
+  - Performance history
+  - 
 ---
 
 ## Features and Flow
@@ -106,7 +108,7 @@ InsightEd: A lightweight, AI-driven platform that automates and generates hyper-
 
 5. **Report Generation**  
    - **Teacher Dashboard**: Class-wide stats (average, distribution, top/bottom performers).  
-   - **Student/Parent Report**: Export a PDF or a simple printout containing personalized insights.
+   - **Student/Parent Report**: Export a PDF or a simple printout containing personalized insights (with a preview).
 
 ---
 
