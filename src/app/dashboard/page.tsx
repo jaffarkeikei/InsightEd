@@ -46,10 +46,20 @@ export default function DashboardPage() {
       {/* Navigation */}
       <nav className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
+          <div className="flex items-center justify-between h-16">
+            {/* Project Name */}
             <div className="flex items-center">
               <h1 className="text-xl font-bold text-gray-900">InsightEd</h1>
             </div>
+
+            {/* Quote */}
+            <div className="flex items-center">
+              <p className="text-gray-500 italic">
+                "Education is not preparation for life; education is life itself." - John Dewey
+              </p>
+            </div>
+
+            {/* User Info */}
             <div className="flex items-center">
               <span className="text-gray-700 mr-4">{userData.email}</span>
               <button
@@ -62,7 +72,6 @@ export default function DashboardPage() {
           </div>
         </div>
       </nav>
-
       {/* Main Content */}
       <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
         <div className="px-4 py-6 sm:px-0">
