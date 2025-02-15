@@ -25,7 +25,7 @@ export default function LoginPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
-    
+  
     try {
       // Mock authentication - replace with actual API call later
       if (formData.email && formData.password) {
@@ -38,7 +38,7 @@ export default function LoginPage() {
         // Set both localStorage and cookie
         localStorage.setItem('user', JSON.stringify(mockUser));
         document.cookie = `user=${JSON.stringify(mockUser)}; path=/`;
-        
+
         router.push('/dashboard');
       } else {
         setError('Please fill in all fields');
@@ -54,7 +54,7 @@ export default function LoginPage() {
       <div className="max-w-md w-full space-y-8 p-8 bg-white rounded-xl shadow-lg">
         <div className="text-center">
           <h2 className="mt-6 text-3xl font-bold text-gray-900">
-            Insight
+            InsightEd
           </h2>
           <p className="mt-2 text-sm text-gray-600">
             Please sign in to your account
