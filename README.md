@@ -139,15 +139,15 @@ InsightEd: A lightweight, AI-driven platform that automates and generates hyper-
 5. **Sustainability** 
    - Open-source core modules; partnerships with local NGOs for device access.
 
-### Tech Stack & Implementation Details
+## Tech Stack & Implementation Details
 
-## Tech Stack
+### Tech Stack
 - **Frontend**: Next.js, React, TailwindCSS
 - **Backend**: Node.js
 - **Database**: PostgreSQL
 - **AI/ML**: OpenAI API (GPT-3.5)
 
-## Development Setup
+### Development Setup
     - Install dependencies
         npm install
     - Run development server
