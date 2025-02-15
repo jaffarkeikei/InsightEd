@@ -84,11 +84,6 @@ InsightEd: A lightweight, AI-driven platform that automates and generates hyper-
 - **Reporting**:
   - Summaries for teacher dashboards.
   - Individual PDF/printed feedback for students.
-
-### 4. Frontend / UI
-- **Web Application** (React).
-- **Responsive UI/UX** to ensure quick data entry and easy navigation.
-
 ---
 
 ## Features and Flow
