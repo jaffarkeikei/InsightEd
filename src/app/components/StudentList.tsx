@@ -15,6 +15,7 @@ interface Student {
   dateOfBirth: string;
   parentName: string;
   parentEmail: string;
+  lastFeedback: string;
 }
 
 const mockStudents: Student[] = [
@@ -25,7 +26,8 @@ const mockStudents: Student[] = [
     email: 'john.doe@school.com',
     grade: '10th',
     performance: 'Excellent',
-    dateOfBirth: '2008-05-14',
+    lastFeedback: 'Shows great initiative in class',
+    dateOfBirth: '2008-05-15',
     parentName: 'Robert Doe',
     parentEmail: 'robert.doe@email.com'
   },
@@ -36,11 +38,47 @@ const mockStudents: Student[] = [
     email: 'jane.smith@school.com',
     grade: '10th',
     performance: 'Good',
-    dateOfBirth: '2008-03-20',
-    parentName: 'Robert Doe',
-    parentEmail: 'robert.doe@email.com'
+    lastFeedback: 'Consistent performance in assignments',
+    dateOfBirth: '2008-07-22',
+    parentName: 'Mary Smith',
+    parentEmail: 'mary.smith@email.com'
   },
-  // Add more mock data as needed
+  {
+    id: '3',
+    studentId: 'STU003',
+    name: 'Michael Johnson',
+    email: 'michael.j@school.com',
+    grade: '11th',
+    performance: 'Average',
+    lastFeedback: 'Needs to improve participation',
+    dateOfBirth: '2007-03-10',
+    parentName: 'David Johnson',
+    parentEmail: 'david.j@email.com'
+  },
+  {
+    id: '4',
+    studentId: 'STU004',
+    name: 'Emily Brown',
+    email: 'emily.b@school.com',
+    grade: '12th',
+    performance: 'Excellent',
+    lastFeedback: 'Outstanding academic performance',
+    dateOfBirth: '2006-11-28',
+    parentName: 'Sarah Brown',
+    parentEmail: 'sarah.b@email.com'
+  },
+  {
+    id: '5',
+    studentId: 'STU005',
+    name: 'William Davis',
+    email: 'william.d@school.com',
+    grade: '11th',
+    performance: 'Needs Improvement',
+    lastFeedback: 'Struggling with mathematics',
+    dateOfBirth: '2007-09-05',
+    parentName: 'James Davis',
+    parentEmail: 'james.d@email.com'
+  }
 ];
 
 type SortField = keyof Student;
@@ -182,7 +220,8 @@ export default function StudentList() {
       performance: student.performance,
       dateOfBirth: student.dateOfBirth,
       parentName: student.parentName,
-      parentEmail: student.parentEmail
+      parentEmail: student.parentEmail,
+      lastFeedback: student.lastFeedback
     });
     setIsFormOpen(true);
   };
