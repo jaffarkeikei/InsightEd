@@ -88,14 +88,18 @@ export default function Reports() {
    * generateSingleStudentPDF
    * Creates one PDF for a specific student's results.
    */
-  const generateSingleStudentPDF = (results: ExamResult[]) => {
+  const generateSingleStudentPDF = async (results: ExamResult[]) => {
     const { studentId, studentName, class: className } = results[0];
     const formatter = new PDFFormatter();
+    
+    // Generate AI insights using the class method
+    const insights = await formatter.generatePerformanceInsights(results);
 
     formatter
       .addHeader(studentName, studentId, className)
       .addExamTable(results)
       .addSummary(results)
+      .addFeedback(insights)
       .addFooter()
       .save(`Report_${studentName.replaceAll(' ', '_')}.pdf`);
   };
