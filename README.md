@@ -1,4 +1,4 @@
-# EduNova: AI-Powered Feedback for Equitable Education  
+# InsightEd: AI-Powered Feedback for Equitable Education  
 **Empowering Underprivileged Classrooms with Personalized Learning Insights**  
 
 ---
@@ -6,9 +6,9 @@
 ## 🌟 **Wow Factor**  
 ### **Creativity & Impact**  
 **Problem Solved:**  
-- **Targeted Impact for the Black Community**: EduNova directly addresses systemic educational inequities in overcrowded African classrooms (e.g., 200+ students per teacher in rural Nigeria/Ghana). By automating feedback, we free teachers to focus on teaching and mentorship while giving students/parents agency over their learning journeys.  
-- **AI as a Force for Equity**: Instead of generic "AI tutors," EduNova’s lightweight, localized AI generates actionable feedback in local languages (e.g., Swahili, Yoruba) and adapts to low-bandwidth contexts—critical for underserved regions.  
-- **Built in a Day**: Our MVP leverages existing tools (OpenAI API, and more) creatively to solve a massive problem. While polished solutions take months, EduNova proves rapid prototyping can spark systemic change.  
+- **Targeted Impact for the Black Community**: InsightEd directly addresses systemic educational inequities in overcrowded African classrooms (e.g., 200+ students per teacher in rural Nigeria/Ghana). By automating feedback, we free teachers to focus on teaching and mentorship while giving students/parents agency over their learning journeys.  
+- **AI as a Force for Equity**: Instead of generic "AI tutors," InsightEd’s lightweight, localized AI generates actionable feedback in local languages (e.g., Swahili, Yoruba) and adapts to low-bandwidth contexts—critical for underserved regions.  
+- **Built in a Day**: Our MVP leverages existing tools (OpenAI API, and more) creatively to solve a massive problem. While polished solutions take months, InsightEd proves rapid prototyping can spark systemic change.  
 
 **Why It’s Remarkable:**  
 - **From Grades to Growth**: Turns static exam scores into dynamic, personalized roadmaps—a first for many under-resourced schools.  
@@ -66,10 +66,10 @@
 
 **Solution (30s):**  
 - *Demo*: Show CSV upload → AI feedback generation → parent PDF.  
-- *Tagline*: "EduNova: Turning grades into growth, one student at a time."  
+- *Tagline*: "InsightEd: Turning grades into growth, one student at a time."  
 
 **Impact (25s):**  
-- *Testimonial* (Simulated): "EduNova cut my grading time by 80%—I finally teach again!" – Ms. Adebayo, Lagos.  
+- *Testimonial* (Simulated): "InsightEd cut my grading time by 80%—I finally teach again!" – Ms. Adebayo, Lagos.  
 - *Call to Action*: "Join us in democratizing education. Let’s light up every child’s potential."  
 
 **Passion & Clarity:**  
@@ -84,15 +84,15 @@
 - **Privacy**: Stores only essential data (no addresses, biometrics).  
 
 ### **Sustainability**  
-- **Open-Source Core**: Communities can adapt EduNova to local dialects/cultures.  
+- **Open-Source Core**: Communities can adapt InsightEd to local dialects/cultures.  
 - **NGO Partnerships**: Collaborate with groups like [WAEC](https://www.waeconline.org.ng/) for scale.  
 
 ---
 
 ## 🚀 **Get Started**  
 ```bash
-git clone https://github.com/your-repo/EduNova.git
-cd EduNova
+git clone https://github.com/your-repo/InsightEd.git
+cd InsightEd
 npm install
 npm run dev
 ```
@@ -103,7 +103,7 @@ MIT License. Built with ❤️ for global educational equity.
 
 
 ```
-Why EduNova?
+Why InsightEd?
 
-We don’t just automate feedback—we reignite the human connection in education. By empowering Black students, parents, and teachers with AI-driven insights, EduNova turns systemic challenges into transformational opportunities.
+We don’t just automate feedback—we reignite the human connection in education. By empowering Black students, parents, and teachers with AI-driven insights, InsightEd turns systemic challenges into transformational opportunities.
 ```
