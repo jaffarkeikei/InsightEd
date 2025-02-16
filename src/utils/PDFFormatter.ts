@@ -16,7 +16,7 @@ export class PDFFormatter {
     this.pdf.setTextColor(33, 37, 41);
     this.pdf.text('InsightEd School - Examination Report', 40, this.currentY);
 
-    this.currentY += 30;
+    this.currentY += 40;
     this.pdf.setFontSize(12);
     this.pdf.setTextColor(99, 102, 241);
     this.pdf.text(`Student Name: ${studentName}`, 40, this.currentY);
@@ -24,7 +24,7 @@ export class PDFFormatter {
     this.pdf.text(`Student ID: ${studentId}`, 40, this.currentY);
     this.currentY += 15;
     this.pdf.text(`Class: ${className}`, 40, this.currentY);
-    this.currentY += 20;
+    this.currentY += 40;
 
     // Date
     this.pdf.setFontSize(10);
@@ -38,7 +38,7 @@ export class PDFFormatter {
     this.pdf.setFontSize(14);
     this.pdf.setTextColor(33, 37, 41);
     this.pdf.text('Detailed Exam Results', 40, this.currentY);
-    this.currentY += 10;
+    this.currentY += 20;
 
     const tableBody = examResults.map(res => {
       const pct = ((res.marks / res.totalMarks) * 100).toFixed(1) + '%';
@@ -73,7 +73,7 @@ export class PDFFormatter {
     });
 
     // Update currentY after the table
-    this.currentY = (this.pdf as any).lastAutoTable.finalY + 20;
+    this.currentY = (this.pdf as any).lastAutoTable.finalY + 40;
     return this; // <-- vital for chaining
   }
 
@@ -87,7 +87,7 @@ export class PDFFormatter {
     this.pdf.setFontSize(14);
     this.pdf.setTextColor(33, 37, 41);
     this.pdf.text('Performance Summary', 40, this.currentY);
-    this.currentY += 10;
+    this.currentY += 20;
 
     const summaryRows = [
       ['Total Exams', examResults.length],
@@ -108,7 +108,7 @@ export class PDFFormatter {
       }
     });
 
-    this.currentY = (this.pdf as any).lastAutoTable.finalY + 20;
+    this.currentY = (this.pdf as any).lastAutoTable.finalY + 40;
     return this;
   }
 
