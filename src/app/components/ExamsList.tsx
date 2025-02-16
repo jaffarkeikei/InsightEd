@@ -19,7 +19,7 @@ interface Exam {
 const mockExams: Exam[] = [
   {
     id: '1',
-    examId: 'EXM001',
+    examId: 'EX001',
     subject: 'Mathematics',
     class: '10th',
     date: '2024-03-25',
@@ -29,7 +29,7 @@ const mockExams: Exam[] = [
   },
   {
     id: '2',
-    examId: 'EXM002',
+    examId: 'EX002',
     subject: 'Physics',
     class: '12th',
     date: '2024-03-20',
@@ -39,14 +39,34 @@ const mockExams: Exam[] = [
   },
   {
     id: '3',
-    examId: 'EXM003',
+    examId: 'EX003',
     subject: 'Chemistry',
     class: '11th',
     date: '2024-03-22',
     duration: '2.5 hours',
     totalMarks: 100,
     status: 'In Progress'
-  }
+  },
+  {
+    id: '4',
+    examId: 'EX004',
+    subject: 'Biology',
+    class: '12th',
+    date: '2024-03-28',
+    duration: '2 hours',
+    totalMarks: 75,
+    status: 'Upcoming'
+  },
+  {
+    id: '5',
+    examId: 'EX005',
+    subject: 'English',
+    class: '10th',
+    date: '2024-03-18',
+    duration: '1.5 hours',
+    totalMarks: 50,
+    status: 'Completed'
+  },
 ];
 
 type SortField = keyof Exam;
