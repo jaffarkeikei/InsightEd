@@ -19,29 +19,310 @@ interface ExamResult {
 }
 
 const mockResults: ExamResult[] = [
+  // John Doe's Results (STU001)
   {
     id: '1',
-    examId: 'EXM001',
+    examId: 'EX001',
     examName: 'Mathematics',
+    studentId: 'STU001',
+    studentName: 'John Doe',
+    class: '10th',
+    marks: 92,
+    totalMarks: 100,
+    status: 'Pass',
+    date: '2024-03-25'
+  },
+  {
+    id: '2',
+    examId: 'EX002',
+    examName: 'Physics',
+    studentId: 'STU001',
+    studentName: 'John Doe',
+    class: '10th',
+    marks: 88,
+    totalMarks: 100,
+    status: 'Pass',
+    date: '2024-03-20'
+  },
+  {
+    id: '3',
+    examId: 'EX003',
+    examName: 'Chemistry',
     studentId: 'STU001',
     studentName: 'John Doe',
     class: '10th',
     marks: 85,
     totalMarks: 100,
     status: 'Pass',
-    date: '2024-03-24'
+    date: '2024-03-22'
   },
   {
-    id: '2',
-    examId: 'EXM002',
+    id: '4',
+    examId: 'EX004',
+    examName: 'Biology',
+    studentId: 'STU001',
+    studentName: 'John Doe',
+    class: '10th',
+    marks: 68,
+    totalMarks: 75,
+    status: 'Pass',
+    date: '2024-03-28'
+  },
+  {
+    id: '5',
+    examId: 'EX005',
+    examName: 'English',
+    studentId: 'STU001',
+    studentName: 'John Doe',
+    class: '10th',
+    marks: 45,
+    totalMarks: 50,
+    status: 'Pass',
+    date: '2024-03-18'
+  },
+  // Jane Smith's Results (STU002)
+  {
+    id: '6',
+    examId: 'EX001',
+    examName: 'Mathematics',
+    studentId: 'STU002',
+    studentName: 'Jane Smith',
+    class: '10th',
+    marks: 95,
+    totalMarks: 100,
+    status: 'Pass',
+    date: '2024-03-25'
+  },
+  {
+    id: '7',
+    examId: 'EX002',
     examName: 'Physics',
     studentId: 'STU002',
     studentName: 'Jane Smith',
+    class: '10th',
+    marks: 82,
+    totalMarks: 100,
+    status: 'Pass',
+    date: '2024-03-20'
+  },
+  {
+    id: '8',
+    examId: 'EX003',
+    examName: 'Chemistry',
+    studentId: 'STU002',
+    studentName: 'Jane Smith',
+    class: '10th',
+    marks: 88,
+    totalMarks: 100,
+    status: 'Pass',
+    date: '2024-03-22'
+  },
+  {
+    id: '9',
+    examId: 'EX004',
+    examName: 'Biology',
+    studentId: 'STU002',
+    studentName: 'Jane Smith',
+    class: '10th',
+    marks: 71,
+    totalMarks: 75,
+    status: 'Pass',
+    date: '2024-03-28'
+  },
+  {
+    id: '10',
+    examId: 'EX005',
+    examName: 'English',
+    studentId: 'STU002',
+    studentName: 'Jane Smith',
+    class: '10th',
+    marks: 47,
+    totalMarks: 50,
+    status: 'Pass',
+    date: '2024-03-18'
+  },
+  // Michael Johnson's Results (STU003)
+  {
+    id: '11',
+    examId: 'EX001',
+    examName: 'Mathematics',
+    studentId: 'STU003',
+    studentName: 'Michael Johnson',
+    class: '11th',
+    marks: 78,
+    totalMarks: 100,
+    status: 'Pass',
+    date: '2024-03-25'
+  },
+  {
+    id: '12',
+    examId: 'EX002',
+    examName: 'Physics',
+    studentId: 'STU003',
+    studentName: 'Michael Johnson',
+    class: '11th',
+    marks: 72,
+    totalMarks: 100,
+    status: 'Pass',
+    date: '2024-03-20'
+  },
+  {
+    id: '13',
+    examId: 'EX003',
+    examName: 'Chemistry',
+    studentId: 'STU003',
+    studentName: 'Michael Johnson',
+    class: '11th',
+    marks: 65,
+    totalMarks: 100,
+    status: 'Pass',
+    date: '2024-03-22'
+  },
+  {
+    id: '14',
+    examId: 'EX004',
+    examName: 'Biology',
+    studentId: 'STU003',
+    studentName: 'Michael Johnson',
+    class: '11th',
+    marks: 55,
+    totalMarks: 75,
+    status: 'Pass',
+    date: '2024-03-28'
+  },
+  {
+    id: '15',
+    examId: 'EX005',
+    examName: 'English',
+    studentId: 'STU003',
+    studentName: 'Michael Johnson',
+    class: '11th',
+    marks: 35,
+    totalMarks: 50,
+    status: 'Pass',
+    date: '2024-03-18'
+  },
+  // Emily Brown's Results (STU004)
+  {
+    id: '16',
+    examId: 'EX001',
+    examName: 'Mathematics',
+    studentId: 'STU004',
+    studentName: 'Emily Brown',
+    class: '12th',
+    marks: 98,
+    totalMarks: 100,
+    status: 'Pass',
+    date: '2024-03-25'
+  },
+  {
+    id: '17',
+    examId: 'EX002',
+    examName: 'Physics',
+    studentId: 'STU004',
+    studentName: 'Emily Brown',
+    class: '12th',
+    marks: 95,
+    totalMarks: 100,
+    status: 'Pass',
+    date: '2024-03-20'
+  },
+  {
+    id: '18',
+    examId: 'EX003',
+    examName: 'Chemistry',
+    studentId: 'STU004',
+    studentName: 'Emily Brown',
     class: '12th',
     marks: 92,
     totalMarks: 100,
     status: 'Pass',
-    date: '2024-03-19'
+    date: '2024-03-22'
+  },
+  {
+    id: '19',
+    examId: 'EX004',
+    examName: 'Biology',
+    studentId: 'STU004',
+    studentName: 'Emily Brown',
+    class: '12th',
+    marks: 70,
+    totalMarks: 75,
+    status: 'Pass',
+    date: '2024-03-28'
+  },
+  {
+    id: '20',
+    examId: 'EX005',
+    examName: 'English',
+    studentId: 'STU004',
+    studentName: 'Emily Brown',
+    class: '12th',
+    marks: 48,
+    totalMarks: 50,
+    status: 'Pass',
+    date: '2024-03-18'
+  },
+  // William Davis's Results (STU005)
+  {
+    id: '21',
+    examId: 'EX001',
+    examName: 'Mathematics',
+    studentId: 'STU005',
+    studentName: 'William Davis',
+    class: '11th',
+    marks: 65,
+    totalMarks: 100,
+    status: 'Pass',
+    date: '2024-03-25'
+  },
+  {
+    id: '22',
+    examId: 'EX002',
+    examName: 'Physics',
+    studentId: 'STU005',
+    studentName: 'William Davis',
+    class: '11th',
+    marks: 58,
+    totalMarks: 100,
+    status: 'Fail',
+    date: '2024-03-20'
+  },
+  {
+    id: '23',
+    examId: 'EX003',
+    examName: 'Chemistry',
+    studentId: 'STU005',
+    studentName: 'William Davis',
+    class: '11th',
+    marks: 62,
+    totalMarks: 100,
+    status: 'Pass',
+    date: '2024-03-22'
+  },
+  {
+    id: '24',
+    examId: 'EX004',
+    examName: 'Biology',
+    studentId: 'STU005',
+    studentName: 'William Davis',
+    class: '11th',
+    marks: 45,
+    totalMarks: 75,
+    status: 'Pass',
+    date: '2024-03-28'
+  },
+  {
+    id: '25',
+    examId: 'EX005',
+    examName: 'English',
+    studentId: 'STU005',
+    studentName: 'William Davis',
+    class: '11th',
+    marks: 32,
+    totalMarks: 50,
+    status: 'Pass',
+    date: '2024-03-18'
   }
 ];
 
