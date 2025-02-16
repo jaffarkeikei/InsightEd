@@ -5,7 +5,7 @@ import Toast from './Toast';
 import ResultForm from './ResultForm';
 import ResultProfile from './ResultProfile';
 
-interface ExamResult {
+export interface ExamResult {
   id: string;
   examId: string;
   examName: string;
@@ -18,8 +18,8 @@ interface ExamResult {
   date: string;
 }
 
-const mockResults: ExamResult[] = [
-  // John Doe's Results (STU001)
+export const mockResults: ExamResult[] = [
+  // John Doe (STU001)
   {
     id: '1',
     examId: 'EX001',
@@ -80,7 +80,8 @@ const mockResults: ExamResult[] = [
     status: 'Pass',
     date: '2024-03-18'
   },
-  // Jane Smith's Results (STU002)
+
+  // Jane Smith (STU002)
   {
     id: '6',
     examId: 'EX001',
@@ -141,7 +142,8 @@ const mockResults: ExamResult[] = [
     status: 'Pass',
     date: '2024-03-18'
   },
-  // Michael Johnson's Results (STU003)
+
+  // Michael Johnson (STU003)
   {
     id: '11',
     examId: 'EX001',
@@ -202,7 +204,8 @@ const mockResults: ExamResult[] = [
     status: 'Pass',
     date: '2024-03-18'
   },
-  // Emily Brown's Results (STU004)
+
+  // Emily Brown (STU004)
   {
     id: '16',
     examId: 'EX001',
@@ -263,7 +266,8 @@ const mockResults: ExamResult[] = [
     status: 'Pass',
     date: '2024-03-18'
   },
-  // William Davis's Results (STU005)
+
+  // William Davis (STU005)
   {
     id: '21',
     examId: 'EX001',
