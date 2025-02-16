@@ -7,14 +7,13 @@ on:
 jobs:
   build_and_preview:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  # or your required version
+          node-version: '16'
 
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
@@ -26,23 +25,3 @@ jobs:
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
           channelId: pr-${{ github.event.number }}
           projectId: your-firebase-project-id
-
-name: Test Firebase Secret
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  test-secret:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check for Firebase Service Account Secret
-        run: |
-          if [ -z "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}" ]; then
-            echo "FIREBASE_SERVICE_ACCOUNT is NOT set!"
-            exit 1
-          else
-            echo "FIREBASE_SERVICE_ACCOUNT is set."
-          fi
