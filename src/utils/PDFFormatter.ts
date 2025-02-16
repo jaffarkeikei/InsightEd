@@ -59,6 +59,7 @@ Focus on being:
 Each section should be comprehensive yet concise, approximately 150 words each.`;
 
     try {
+        console.log('API Key available:', !!process.env.NEXT_PUBLIC_OPENAI_API_KEY);
       const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
@@ -80,22 +81,47 @@ Each section should be comprehensive yet concise, approximately 150 words each.`
       });
 
       const data = await response.json();
+      
+      // Log the response for debugging
+      console.log('OpenAI API Response:', data);
+
+      // Check if the response is valid
+      if (!response.ok) {
+        throw new Error(`API Error: ${data.error?.message || 'Unknown error'}`);
+      }
+
+      // Validate the response structure
+      if (!data.choices || !data.choices.length || !data.choices[0].message) {
+        throw new Error('Invalid response structure from OpenAI API');
+      }
+
       const feedback = data.choices[0].message.content;
-      
-      // Split the feedback into sections
-      const sections = feedback.split(/\d\.\s+/);
-      
+      console.log('Raw feedback:', feedback); // Debug log
+
+      // More robust section splitting
+      const sections = feedback.split(/(?=STUDENT FEEDBACK|PARENT\/GUARDIAN FEEDBACK|TEACHER NOTES)/i);
+
+      // Validate and clean sections
       return {
-        studentFeedback: sections[1]?.trim() || '',
-        parentFeedback: sections[2]?.trim() || '',
-        teacherNotes: sections[3]?.trim() || ''
+        studentFeedback: sections.find(s => s.includes('STUDENT FEEDBACK'))?.replace(/STUDENT FEEDBACK.*?:/i, '').trim() 
+          || 'Student feedback unavailable',
+        parentFeedback: sections.find(s => s.includes('PARENT/GUARDIAN FEEDBACK'))?.replace(/PARENT\/GUARDIAN FEEDBACK.*?:/i, '').trim() 
+          || 'Parent feedback unavailable',
+        teacherNotes: sections.find(s => s.includes('TEACHER NOTES'))?.replace(/TEACHER NOTES.*?:/i, '').trim() 
+          || 'Teacher notes unavailable'
       };
+
     } catch (error) {
-      console.error('Error generating insights:', error);
+      console.error('Error in generatePerformanceInsights:', error);
+      
+      // Provide a more detailed fallback response
       return {
-        studentFeedback: 'Unable to generate feedback at this time.',
-        parentFeedback: 'Unable to generate feedback at this time.',
-        teacherNotes: 'Unable to generate feedback at this time.'
+        studentFeedback: `We're currently experiencing technical difficulties generating personalized feedback. 
+          Please check your exam results above for performance details.`,
+        parentFeedback: `Due to technical limitations, detailed parent feedback is temporarily unavailable. 
+          Please refer to the exam results table for current academic standing.`,
+        teacherNotes: `System Note: Unable to generate detailed teacher notes at this time. 
+          Please consult with the subject teachers directly for specific guidance.`
       };
     }
   }
@@ -136,17 +162,21 @@ Each section should be comprehensive yet concise, approximately 150 words each.`
 
     this.pdf.autoTable({
       startY: this.currentY,
-      head: [
-        ['Subject', 'Date', 'Marks', 'Total Marks', 'Percentage', 'Status']
-      ],
+      head: [['Subject', 'Date', 'Marks', 'Total', '%', 'Status']],
       body: tableBody,
       theme: 'grid',
-      headStyles: {
-        fillColor: [99, 102, 241],
-        textColor: [255, 255, 255],
-        fontSize: 10
+      styles: {
+        fontSize: 9,
+        cellPadding: 5
       },
-      bodyStyles: { fontSize: 9 },
+      columnStyles: {
+        0: { cellWidth: 80 },
+        1: { cellWidth: 70 },
+        2: { cellWidth: 50 },
+        3: { cellWidth: 50 },
+        4: { cellWidth: 50 },
+        5: { cellWidth: 50 }
+      },
       didParseCell: data => {
         if (data.section === 'body' && data.column.index === 5) {
           const val = data.cell.raw as string;

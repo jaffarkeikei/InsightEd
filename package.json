@@ -12,6 +12,7 @@
     "@huggingface/inference": "^3.3.3",
     "chart.js": "^3.9.1",
     "chartjs-node-canvas": "^4.1.6",
+    "dotenv": "^16.4.7",
     "jspdf": "^2.5.2",
     "jspdf-autotable": "^3.8.4",
     "next": "15.1.6",
