@@ -34,7 +34,7 @@ const SignUp = () => {
     setTimeout(() => {
       toast({
         title: "Account created!",
-        description: "Welcome to EduNova. Please sign in to continue.",
+        description: "Welcome to InsightEd. Please sign in to continue.",
       });
       navigate("/auth/signin");
     }, 1500);
