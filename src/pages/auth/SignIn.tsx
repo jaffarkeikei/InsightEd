@@ -19,10 +19,9 @@ const SignIn = () => {
     e.preventDefault();
     setLoading(true);
     
-    // TODO: Implement actual authentication
     setTimeout(() => {
       toast({
-        title: "Welcome back!",
+        title: "InsightEd!",
         description: "Successfully signed in to your account.",
       });
       navigate("/dashboard");
@@ -34,7 +33,7 @@ const SignIn = () => {
       <Card className="w-full max-w-md p-8 backdrop-blur-sm bg-white/80 animate-fadeIn">
         <div className="space-y-6">
           <div className="space-y-2 text-center">
-            <h1 className="text-3xl font-bold tracking-tight">Welcome Back</h1>
+            <h1 className="text-3xl font-bold tracking-tight">InsightEd</h1>
             <p className="text-muted-foreground">Enter your credentials to sign in</p>
           </div>
           
