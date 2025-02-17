@@ -1,6 +1,7 @@
 # InsightEd: AI-Powered Feedback for Equitable Education  
 **Empowering Underprivileged Classrooms with Personalized Learning Insights**  
 
+[InsightEd web app](https://insighted-1aa36.web.app/auth/signin)
 ---
 
 ## 🌟 **Wow Factor**  
