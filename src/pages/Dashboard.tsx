@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { Users, FileText, BarChart, FileSpreadsheet } from "lucide-react";
+import { Users, FileText, BarChart, FileSpreadsheet, LogOut } from "lucide-react";
 import StudentsList from "@/components/dashboard/StudentsList";
 import ExamForm from "@/components/dashboard/ExamForm";
 import ResultsDialog from "@/components/dashboard/ResultsDialog";
@@ -9,6 +9,7 @@ import ExamsList from "@/components/dashboard/ExamsList";
 import Analysis from "@/components/dashboard/Analysis";
 import Reports from "@/components/dashboard/Reports";
 import { Student, Exam } from "@/types/student";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   const { toast } = useToast();
@@ -21,6 +22,7 @@ const Dashboard = () => {
     key: string;
     direction: 'ascending' | 'descending' | null;
   }>({ key: '', direction: null });
+  const navigate = useNavigate();
 
   const [students, setStudents] = useState<Student[]>([
     {
@@ -286,6 +288,11 @@ const Dashboard = () => {
     });
   };
 
+  const handleLogout = () => {
+    // Add your logout logic here (e.g., clear tokens, reset state)
+    navigate('/auth/signin');
+  };
+
   const renderContent = () => {
     switch (activeSection) {
       case 'students':
@@ -362,7 +369,7 @@ const Dashboard = () => {
             </p>
             <div className="flex items-center gap-4">
               <span className="text-gray-600">jaffarkeikei@gmail.com</span>
-              <Button variant="outline" size="sm">Logout</Button>
+              <Button variant="outline" size="sm" onClick={handleLogout}>Logout</Button>
             </div>
           </div>
         </div>
