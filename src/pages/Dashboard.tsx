@@ -365,7 +365,7 @@ const Dashboard = () => {
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold text-gray-900">InsightEd</h1>
             <p className="text-gray-500 text-base italic flex-1 text-center mx-8">
-              "Education is not preparation for life; education is life itself. - John Dewey"
+              "Education is not preparation for life; education is life itself." - John Dewey
             </p>
             <div className="flex items-center gap-4">
               <span className="text-gray-600">jaffarkeikei@gmail.com</span>
