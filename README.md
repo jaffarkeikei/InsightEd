@@ -1,124 +1,141 @@
-# InsightEd: AI-Powered Feedback for Equitable Education  
-**Empowering Underprivileged Classrooms with Personalized Learning Insights**  
+# InsightEd: AI-Powered Educational Analytics Platform
+> Transforming Education Through Data-Driven Insights
 
-[InsightEd web app](https://insighted-1aa36.web.app/auth/signin)
----
+[![React](https://img.shields.io/badge/React-18.3.1-61dafb.svg)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-3178c6.svg)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-5.4.1-646cff.svg)](https://vitejs.dev/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.11-38bdf8.svg)](https://tailwindcss.com/)
 
-## 🌟 **Wow Factor**  
-### **Creativity & Impact**  
-**Problem Solved:**  
-- **Targeted Impact for the Black Community**: InsightEd directly addresses systemic educational inequities in overcrowded African classrooms (e.g., 200+ students per teacher in rural Nigeria/Ghana). By automating feedback, we free teachers to focus on teaching and mentorship while giving students/parents agency over their learning journeys.  
-- **AI as a Force for Equity**: Instead of generic "AI tutors," InsightEd's lightweight, localized AI generates actionable feedback in local languages (e.g., Swahili, Yoruba) and adapts to low-bandwidth contexts—critical for underserved regions.  
-- **Built in a Day**: Our MVP leverages existing tools (OpenAI API, and more) creatively to solve a massive problem. While polished solutions take months, InsightEd proves rapid prototyping can spark systemic change.  
+## 🎯 Overview
 
-**Why It's Remarkable:**  
-- **From Grades to Growth**: Turns static exam scores into dynamic, personalized roadmaps—a first for many under-resourced schools.  
-- **Scalable Empowerment**: Designed for offline use on low-end smartphones, ensuring accessibility for communities with limited tech infrastructure.  
+InsightEd is a modern web application designed to help teachers track, analyze, and improve student performance through data-driven insights. Built with React and TypeScript, it offers a seamless experience for managing student data, analyzing performance trends, and generating comprehensive reports.
 
----
+## ✨ Features
 
-## 🛠️ **Execution**  
-### **Does It Work?**  
-**Testable MVP Features:**  
-1. **Instant Feedback Generation**: Upload a CSV of student scores → AI generates personalized reports in <10 seconds.  
-2. **Teacher Dashboard**: Visualize class trends (improvements, gaps) without manual calculations.  
-3. **Parent-Friendly PDFs**: Export simple, shareable reports with improvement steps.  
+### 📊 Performance Analytics
+- Real-time class performance dashboards
+- Subject-wise analysis with detailed metrics
+- Performance trend visualization
+- Comparative analysis tools
 
-**Demo Instructions** (Testable in 60 Seconds):  
-1. **Upload Sample Data**: Use our demo CSV (20 students, 5 subjects).  
-2. **Generate Feedback**: Watch AI highlight "John improved 15% in Math vs. last term" and recommend free online resources.  
-3. **View Dashboard**: See class averages, top performers, and weak areas.  
+### 👥 Student Management
+- Comprehensive student profiles
+- Exam score tracking
+- Performance history
+- Parent contact management
 
-**Technical Validation:**  
-- **Tech Stack**: Next.js (frontend), Node.js (backend), PostgreSQL (database), OpenAI API (feedback generation).  
-- **Reproducible Setup**: Clone, `npm install`, and run locally.  
+### 📝 Exam Management
+- Easy exam score entry
+- Multiple subject support
+- Score analysis and trends
+- Performance categorization
 
----
+### 📋 Report Generation
+- Automated PDF report generation
+- Customizable report templates
+- Individual student reports
+- Class performance summaries
 
-## 🎨 **Design**  
-### **UI/UX Highlights**  
-**For Teachers:**  
-- **Zero-Click Analytics**: Upload scores → auto-generated dashboards.  
-- **Mobile-First**: Works seamlessly on low-end smartphones (common in rural areas).  
+## 🛠️ Technical Stack
 
-**For Parents:**  
-- **No-Tech Access**: Printable PDFs with pictograms for non-literate guardians.  
-- **Gamified SMS Quizzes** (Future): "Ask your child: What's 3/4 + 1/2? Reply with the answer!"  
+### Frontend
+- **Framework**: React 18.3.1
+- **Language**: TypeScript 5.5.3
+- **Build Tool**: Vite 5.4.1
+- **Styling**: TailwindCSS 3.4.11
+- **UI Components**: shadcn/ui
+- **Charts**: Recharts
+- **PDF Generation**: jsPDF
 
-**Design Principles:**  
-- **Minimalist Interface**: No complex menus—ideal for overworked teachers.  
-- **Inclusive Color Palette**: High contrast for readability; avoids culturally biased symbols.  
-- **Offline-First**: Works without stable internet (critical for rural Africa).  
+### Development Tools
+- ESLint for code quality
+- Prettier for code formatting
+- PostCSS for CSS processing
+- TypeScript for type safety
 
----
+## 📦 Installation
 
-## 📑 **Documentation**
-Comprehensive documentation is available in the [docs](./docs) directory, including:
-
-- [System Overview](./docs/system-overview.md) - Architecture and components
-- [Component Interactions](./docs/component-interactions.md) - Communication between components
-- [Data Model](./docs/data-model.md) - Data structures and relationships
-- [User Flows](./docs/user-flows.md) - User journeys through the application
-- [UI Components](./docs/ui-components.md) - UI component structure
-- [Future Roadmap](./docs/future-roadmap.md) - Planned enhancements
-
-All documentation includes detailed Mermaid diagrams for visual representation of the application architecture and workflows.
-
----
-
-## 📣 **The Pitch**  
-**Elevator Pitch**:  
-> We offer a simple platform where teachers can enter or upload exam scores, and within seconds, generate personalized feedback reports for each student. This feedback leverages AI-driven insights, empowering students, parents, and teachers to understand progress, spot trends, learning gaps, and act on improvement opportunities. This gives meaning to numbers, while making AI accessible and useful to the world.
-
-### **Video Script Outline** (2-Minute Hook)  
-**Opening (15s):**  
-- *Visual*: A teacher in a crowded classroom, overwhelmed by stacks of ungraded papers.  
-- *Voiceover*: "In rural Nigeria, 1 teacher serves 200 students. Feedback is a luxury. But what if AI could change that?"  
-
-**Problem (20s):**  
-- *Stats*: "70% of African parents never see detailed feedback—just a grade."  
-- *Pain Points*: Teacher burnout, student disengagement, parental exclusion.  
-
-**Solution (30s):**  
-- *Demo*: Show CSV upload → AI feedback generation → parent PDF.  
-- *Tagline*: "InsightEd: Turning grades into growth, one student at a time."  
-
-**Impact (25s):**  
-- *Testimonial* (Simulated): "InsightEd cut my grading time by 80%—I finally teach again!" – Ms. Adebayo, Lagos.  
-- *Call to Action*: "Join us in democratizing education. Let's light up every child's potential."  
-
-**Passion & Clarity:**  
-- Confident delivery, Afrocentric visuals, and upbeat background music (e.g., Afrobeats rhythm).  
-
----
-
-## ⚖️ **Ethical Considerations**  
-### **Human-Centered AI**  
-- **Bias Mitigation**: Feedback focuses on *growth* (e.g., "Practice fractions" vs. "You're bad at math").  
-- **Transparency**: Parents/teachers can request AI logic explanations.  
-- **Privacy**: Stores only essential data (no addresses, biometrics).  
-
-### **Sustainability**  
-- **Open-Source Core**: Communities can adapt InsightEd to local dialects/cultures.  
-- **NGO Partnerships**: Collaborate with groups like [WAEC](https://www.waeconline.org.ng/) for scale.  
-
----
-
-## 🚀 **Get Started**  
+1. Clone the repository:
 ```bash
-git clone https://github.com/your-repo/InsightEd.git
+git clone https://github.com/your-username/InsightEd.git
+```
+
+2. Install dependencies:
+```bash
 cd InsightEd
 npm install
+```
+
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-## License
-
-MIT License. Built with ❤️ for global educational equity.
-
-
+4. Build for production:
+```bash
+npm run build
 ```
-Why InsightEd?
 
-We don't just automate feedback—we reignite the human connection in education. By empowering Black students, parents, and teachers with AI-driven insights, InsightEd turns systemic challenges into transformational opportunities.
+## 🔧 Configuration
+
+1. Environment Variables:
+```env
+VITE_APP_TITLE=InsightEd
+VITE_APP_API_URL=your-api-url
 ```
+
+2. Tailwind Configuration:
+- Custom theme settings in `tailwind.config.ts`
+- Additional styling in `src/index.css`
+
+## 📚 Documentation
+
+Comprehensive documentation is available in the [docs](./docs) directory:
+
+- [System Overview](./docs/system-overview.md) - Architecture and components
+- [Component Interactions](./docs/component-interactions.md) - Component communication
+- [Data Model](./docs/data-model.md) - Data structures and relationships
+- [User Flows](./docs/user-flows.md) - User journey documentation
+- [UI Components](./docs/ui-components.md) - UI component structure
+- [Future Roadmap](./docs/future-roadmap.md) - Planned enhancements
+
+All documentation includes detailed Mermaid diagrams for visual representation.
+
+## 🧪 Testing
+
+Run tests with:
+```bash
+npm run test
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [shadcn/ui](https://ui.shadcn.com/) for beautiful UI components
+- [Recharts](https://recharts.org/) for data visualization
+- [jsPDF](https://github.com/parallax/jsPDF) for PDF generation
+- [TailwindCSS](https://tailwindcss.com/) for styling
+
+## 🚀 Roadmap
+
+See our [Future Roadmap](./docs/future-roadmap.md) for planned features and enhancements.
+
+## 📞 Support
+
+For support, please open an issue in the GitHub repository or contact the maintainers.
+
+---
+
+<p align="center">Built with ❤️ for improving education through technology</p>
+
