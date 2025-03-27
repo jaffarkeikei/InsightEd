@@ -8,10 +8,10 @@
 ### **Creativity & Impact**  
 **Problem Solved:**  
 - **Targeted Impact for the Black Community**: InsightEd directly addresses systemic educational inequities in overcrowded African classrooms (e.g., 200+ students per teacher in rural Nigeria/Ghana). By automating feedback, we free teachers to focus on teaching and mentorship while giving students/parents agency over their learning journeys.  
-- **AI as a Force for Equity**: Instead of generic "AI tutors," InsightEd’s lightweight, localized AI generates actionable feedback in local languages (e.g., Swahili, Yoruba) and adapts to low-bandwidth contexts—critical for underserved regions.  
+- **AI as a Force for Equity**: Instead of generic "AI tutors," InsightEd's lightweight, localized AI generates actionable feedback in local languages (e.g., Swahili, Yoruba) and adapts to low-bandwidth contexts—critical for underserved regions.  
 - **Built in a Day**: Our MVP leverages existing tools (OpenAI API, and more) creatively to solve a massive problem. While polished solutions take months, InsightEd proves rapid prototyping can spark systemic change.  
 
-**Why It’s Remarkable:**  
+**Why It's Remarkable:**  
 - **From Grades to Growth**: Turns static exam scores into dynamic, personalized roadmaps—a first for many under-resourced schools.  
 - **Scalable Empowerment**: Designed for offline use on low-end smartphones, ensuring accessibility for communities with limited tech infrastructure.  
 
@@ -43,12 +43,26 @@
 
 **For Parents:**  
 - **No-Tech Access**: Printable PDFs with pictograms for non-literate guardians.  
-- **Gamified SMS Quizzes** (Future): "Ask your child: What’s 3/4 + 1/2? Reply with the answer!"  
+- **Gamified SMS Quizzes** (Future): "Ask your child: What's 3/4 + 1/2? Reply with the answer!"  
 
 **Design Principles:**  
 - **Minimalist Interface**: No complex menus—ideal for overworked teachers.  
 - **Inclusive Color Palette**: High contrast for readability; avoids culturally biased symbols.  
 - **Offline-First**: Works without stable internet (critical for rural Africa).  
+
+---
+
+## 📑 **Documentation**
+Comprehensive documentation is available in the [docs](./docs) directory, including:
+
+- [System Overview](./docs/system-overview.md) - Architecture and components
+- [Component Interactions](./docs/component-interactions.md) - Communication between components
+- [Data Model](./docs/data-model.md) - Data structures and relationships
+- [User Flows](./docs/user-flows.md) - User journeys through the application
+- [UI Components](./docs/ui-components.md) - UI component structure
+- [Future Roadmap](./docs/future-roadmap.md) - Planned enhancements
+
+All documentation includes detailed Mermaid diagrams for visual representation of the application architecture and workflows.
 
 ---
 
@@ -71,7 +85,7 @@
 
 **Impact (25s):**  
 - *Testimonial* (Simulated): "InsightEd cut my grading time by 80%—I finally teach again!" – Ms. Adebayo, Lagos.  
-- *Call to Action*: "Join us in democratizing education. Let’s light up every child’s potential."  
+- *Call to Action*: "Join us in democratizing education. Let's light up every child's potential."  
 
 **Passion & Clarity:**  
 - Confident delivery, Afrocentric visuals, and upbeat background music (e.g., Afrobeats rhythm).  
@@ -80,7 +94,7 @@
 
 ## ⚖️ **Ethical Considerations**  
 ### **Human-Centered AI**  
-- **Bias Mitigation**: Feedback focuses on *growth* (e.g., "Practice fractions" vs. "You’re bad at math").  
+- **Bias Mitigation**: Feedback focuses on *growth* (e.g., "Practice fractions" vs. "You're bad at math").  
 - **Transparency**: Parents/teachers can request AI logic explanations.  
 - **Privacy**: Stores only essential data (no addresses, biometrics).  
 
@@ -106,5 +120,5 @@ MIT License. Built with ❤️ for global educational equity.
 ```
 Why InsightEd?
 
-We don’t just automate feedback—we reignite the human connection in education. By empowering Black students, parents, and teachers with AI-driven insights, InsightEd turns systemic challenges into transformational opportunities.
+We don't just automate feedback—we reignite the human connection in education. By empowering Black students, parents, and teachers with AI-driven insights, InsightEd turns systemic challenges into transformational opportunities.
 ```
